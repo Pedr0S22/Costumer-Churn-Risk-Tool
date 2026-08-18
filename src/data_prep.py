@@ -81,7 +81,7 @@ def clean(df: pd.DataFrame, is_historical: bool = True, verbose: bool = True) ->
     if n_fixed > 0:
         if verbose:
             ids = df.loc[login_before, "customer_id"].tolist()
-            print(f"[5] Fixed {n_fixed} row(s) where last_login < signup → set login = signup: {ids}")
+            print(f"[5] Fixed {n_fixed} row(s) where last_login < signup -> set login = signup: {ids}")
         df.loc[login_before, "last_login_date"] = df.loc[login_before, "signup_date"]
 
     # Step 6: Set negative monthly_spend to NaN
@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Clean raw customer CSVs.")
     parser.add_argument("--historical", default="data/raw/historical_customers_ds.csv")
-    parser.add_argument("--out-dir", default="data/processed")
+    parser.add_argument("--out-dir", default="data/processed/scripts")
     args = parser.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
