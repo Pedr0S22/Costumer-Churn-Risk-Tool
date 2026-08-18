@@ -5,7 +5,7 @@ cust_1003,49,Medium,Low-tier plan; Low monthly spend; Non-Dutch language prefere
 cust_1004,49,Medium,High support-ticket volume; French language preference; Non-Dutch language preference
 cust_1005,49,Medium,Low-tier plan; Low monthly spend; Non-Dutch language preference
 cust_1006,50,Medium,Portuguese language preference; Long time since last login; Non-Dutch language preference
-cust_1007,49,Medium,Non-English language preference; Non-Spanish language preference
+cust_1007,50,Medium,Non-English language preference; Non-Spanish language preference
 cust_1008,51,Medium,Low recent login activity; Long time since last login; High support-ticket volume
 cust_1009,50,Medium,Portuguese language preference; Long account tenure; Low monthly spend
 cust_1010,50,Medium,Low recent login activity; Low monthly spend; Non-Dutch language preference
@@ -14,10 +14,10 @@ cust_1012,50,Medium,Low-tier plan; Long time since last login; Low monthly spend
 cust_1013,51,Medium,Long time since last login; Low recent login activity; High support-ticket volume
 cust_1014,50,Medium,Long time since last login; Low recent login activity; Portuguese language preference
 cust_1015,49,Medium,Low monthly spend; Long account tenure; Non-Dutch language preference
-cust_1016,49,Medium,Non-Dutch language preference; Non-English language preference; Non-Spanish language preference
+cust_1016,50,Medium,Non-Dutch language preference; Non-English language preference; Non-Spanish language preference
 cust_1017,49,Medium,Non-Dutch language preference; Long account tenure; Non-English language preference
-cust_1018,51,Medium,Long time since last login; Low recent login activity; High support-ticket volume
-cust_1019,51,Medium,Long time since last login; Low recent login activity; High support-ticket volume
+cust_1018,50,Medium,Long time since last login; Low recent login activity; High support-ticket volume
+cust_1019,50,Medium,Long time since last login; Low recent login activity; High support-ticket volume
 cust_1020,49,Medium,Non-Dutch language preference; Long account tenure; Non-English language preference
 cust_1021,50,Medium,Portuguese language preference; Low-tier plan; Low monthly spend
 cust_1022,49,Medium,Low monthly spend; Non-Dutch language preference; Low-tier plan
@@ -40,20 +40,20 @@ cust_1038,49,Medium,Long account tenure; Non-English language preference; Non-Sp
 cust_1039,50,Medium,Low recent login activity; High support-ticket volume; Long time since last login
 cust_1040,49,Medium,Non-Dutch language preference; Non-English language preference; Non-Spanish language preference
 cust_1041,51,Medium,Long time since last login; Low recent login activity; High support-ticket volume
-cust_1042,49,Medium,Portuguese language preference; Low-tier plan; Low monthly spend
-cust_1043,49,Medium,Portuguese language preference; Non-Dutch language preference; Non-English language preference
-cust_1044,49,Medium,Non-Dutch language preference; Non-English language preference
+cust_1042,50,Medium,Portuguese language preference; Low-tier plan; Low monthly spend
+cust_1043,50,Medium,Portuguese language preference; Non-Dutch language preference; Non-English language preference
+cust_1044,50,Medium,Non-Dutch language preference; Non-English language preference
 cust_1045,50,Medium,Non-Dutch language preference; Long account tenure; Non-Spanish language preference
 cust_1046,49,Medium,Low-tier plan; Low monthly spend; Long account tenure
 cust_1047,49,Medium,Non-Dutch language preference; Non-Spanish language preference
-cust_1048,49,Medium,Long account tenure; Low monthly spend; Low-tier plan
+cust_1048,50,Medium,Long account tenure; Low monthly spend; Low-tier plan
 cust_1049,49,Medium,Portuguese language preference; Non-Dutch language preference; Non-English language preference
 cust_1050,50,Medium,High support-ticket volume; Low recent login activity; Long time since last login
 cust_1051,50,Medium,French language preference; Low-tier plan; Low monthly spend
 cust_1052,50,Medium,French language preference; Low-tier plan; Low monthly spend
 cust_1053,50,Medium,Long account tenure; Non-English language preference; Non-Spanish language preference
 cust_1054,49,Medium,Non-Dutch language preference; Non-English language preference; Non-Spanish language preference
-cust_1055,49,Medium,Portuguese language preference; High support-ticket volume; Low monthly spend
+cust_1055,50,Medium,Portuguese language preference; High support-ticket volume; Low monthly spend
 cust_1056,49,Medium,Non-Dutch language preference; Non-English language preference; Non-Spanish language preference
 cust_1057,49,Medium,Low monthly spend; Non-Dutch language preference; Low-tier plan
 cust_1058,49,Medium,Non-Dutch language preference; Non-English language preference
@@ -67,14 +67,14 @@ cust_1065,49,Medium,Non-Dutch language preference; Non-Spanish language preferen
 cust_1066,50,Medium,Low-tier plan; Low monthly spend; Long account tenure
 cust_1067,51,Medium,Low recent login activity; Long time since last login; Portuguese language preference
 cust_1068,50,Medium,High support-ticket volume; Low recent login activity; Non-English language preference
-cust_1069,49,Medium,Non-Dutch language preference; Long account tenure; Non-Spanish language preference
+cust_1069,50,Medium,Non-Dutch language preference; Long account tenure; Non-Spanish language preference
 cust_1070,50,Medium,Long time since last login; Non-Dutch language preference; Long account tenure
 cust_1071,50,Medium,Non-Dutch language preference; Non-Spanish language preference; Low monthly spend
 cust_1072,51,Medium,Low recent login activity; Long time since last login; High support-ticket volume
 cust_1073,49,Medium,French language preference; Non-Dutch language preference; Non-English language preference
 cust_1074,50,Medium,French language preference; Low monthly spend; Non-Dutch language preference
 cust_1075,50,Medium,French language preference; Low-tier plan; Low monthly spend
-cust_1076,49,Medium,French language preference; Non-Dutch language preference; Non-English language preference
+cust_1076,50,Medium,French language preference; Non-Dutch language preference; Non-English language preference
 cust_1077,49,Medium,French language preference; Non-Dutch language preference; Long account tenure
 cust_1078,50,Medium,High support-ticket volume; Low recent login activity; Long time since last login
 cust_1079,51,Medium,Long time since last login; Low recent login activity; High support-ticket volume

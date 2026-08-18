@@ -60,7 +60,7 @@
   },
   {
     "customer_id": "cust_1007",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Non-English language preference",
@@ -149,7 +149,7 @@
   },
   {
     "customer_id": "cust_1016",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Non-Dutch language preference",
@@ -169,7 +169,7 @@
   },
   {
     "customer_id": "cust_1018",
-    "risk_score": 51,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -179,7 +179,7 @@
   },
   {
     "customer_id": "cust_1019",
-    "risk_score": 51,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -409,7 +409,7 @@
   },
   {
     "customer_id": "cust_1042",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Portuguese language preference",
@@ -419,7 +419,7 @@
   },
   {
     "customer_id": "cust_1043",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Portuguese language preference",
@@ -429,7 +429,7 @@
   },
   {
     "customer_id": "cust_1044",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Non-Dutch language preference",
@@ -467,7 +467,7 @@
   },
   {
     "customer_id": "cust_1048",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Long account tenure",
@@ -537,7 +537,7 @@
   },
   {
     "customer_id": "cust_1055",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Portuguese language preference",
@@ -676,7 +676,7 @@
   },
   {
     "customer_id": "cust_1069",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Non-Dutch language preference",
@@ -746,7 +746,7 @@
   },
   {
     "customer_id": "cust_1076",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "French language preference",

@@ -96,7 +96,7 @@ def get_top_reasons(model, row_scaled, feature_names):
 def main():
     parser = argparse.ArgumentParser(description="Score current customers for churn risk.")
     parser.add_argument("--input", default="data/raw/current_customers_ds.csv")
-    parser.add_argument("--model", default="models/churn_model.joblib")
+    parser.add_argument("--model", default="models/churn_model_v1.joblib")
     parser.add_argument("--output", default="data/output/scores")
     parser.add_argument("--format", choices=["json", "csv"], default="json", help="Output format: json or csv")
     args = parser.parse_args()
