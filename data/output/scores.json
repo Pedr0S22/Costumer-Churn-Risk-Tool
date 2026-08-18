@@ -30,7 +30,7 @@
   },
   {
     "customer_id": "cust_1004",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "High support-ticket volume",
@@ -129,7 +129,7 @@
   },
   {
     "customer_id": "cust_1014",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -169,7 +169,7 @@
   },
   {
     "customer_id": "cust_1018",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -179,7 +179,7 @@
   },
   {
     "customer_id": "cust_1019",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -209,7 +209,7 @@
   },
   {
     "customer_id": "cust_1022",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Low monthly spend",
@@ -299,7 +299,7 @@
   },
   {
     "customer_id": "cust_1031",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "High support-ticket volume",
@@ -309,7 +309,7 @@
   },
   {
     "customer_id": "cust_1032",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Low-tier plan",
@@ -329,7 +329,7 @@
   },
   {
     "customer_id": "cust_1034",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Long time since last login",
@@ -349,7 +349,7 @@
   },
   {
     "customer_id": "cust_1036",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Low recent login activity",
@@ -379,7 +379,7 @@
   },
   {
     "customer_id": "cust_1039",
-    "risk_score": 50,
+    "risk_score": 51,
     "risk_category": "Medium",
     "top_reasons": [
       "Low recent login activity",
@@ -389,7 +389,7 @@
   },
   {
     "customer_id": "cust_1040",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Non-Dutch language preference",
@@ -448,7 +448,7 @@
   },
   {
     "customer_id": "cust_1046",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Low-tier plan",
@@ -557,7 +557,7 @@
   },
   {
     "customer_id": "cust_1057",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "Low monthly spend",
@@ -626,7 +626,7 @@
   },
   {
     "customer_id": "cust_1064",
-    "risk_score": 49,
+    "risk_score": 50,
     "risk_category": "Medium",
     "top_reasons": [
       "French language preference",

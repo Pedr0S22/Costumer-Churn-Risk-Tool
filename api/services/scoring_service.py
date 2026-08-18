@@ -16,7 +16,7 @@ class ScoringService:
         self.artifact = None
 
     def load_model(self):
-        model_path = os.environ.get("MODEL_PATH", os.path.join(os.path.dirname(__file__), "../../models/churn_model_v1.joblib"))
+        model_path = os.environ.get("MODEL_PATH", os.path.join(os.path.dirname(__file__), "../../models/churn-model_v1.joblib"))
         if not os.path.exists(model_path):
             print(f"Warning: Model not found at {model_path}. Please run train.py first.")
             return
