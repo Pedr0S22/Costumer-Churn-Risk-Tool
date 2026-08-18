@@ -1,0 +1,797 @@
+[
+  {
+    "customer_id": "cust_1001",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1002",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1003",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1004",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "French language preference",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1005",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1006",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Long time since last login",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1007",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1008",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1009",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Long account tenure",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1010",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1011",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Portuguese language preference",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1012",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Long time since last login",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1013",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1014",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "Portuguese language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1015",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low monthly spend",
+      "Long account tenure",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1016",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1017",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Long account tenure",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1018",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1019",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1020",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Long account tenure",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1021",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1022",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low monthly spend",
+      "Non-Dutch language preference",
+      "Low-tier plan"
+    ]
+  },
+  {
+    "customer_id": "cust_1023",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Portuguese language preference",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1024",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1025",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low monthly spend",
+      "Non-Dutch language preference",
+      "Low-tier plan"
+    ]
+  },
+  {
+    "customer_id": "cust_1026",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "High support-ticket volume",
+      "Long time since last login"
+    ]
+  },
+  {
+    "customer_id": "cust_1027",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1028",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1029",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "Long time since last login",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1030",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1031",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "French language preference",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1032",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1033",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1034",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1035",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "Long account tenure",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1036",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "French language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1037",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1038",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long account tenure",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1039",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "High support-ticket volume",
+      "Long time since last login"
+    ]
+  },
+  {
+    "customer_id": "cust_1040",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1041",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1042",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1043",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1044",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1045",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Long account tenure",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1046",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1047",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1048",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long account tenure",
+      "Low monthly spend",
+      "Low-tier plan"
+    ]
+  },
+  {
+    "customer_id": "cust_1049",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1050",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "Low recent login activity",
+      "Long time since last login"
+    ]
+  },
+  {
+    "customer_id": "cust_1051",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1052",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1053",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long account tenure",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1054",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1055",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "High support-ticket volume",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1056",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1057",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low monthly spend",
+      "Non-Dutch language preference",
+      "Low-tier plan"
+    ]
+  },
+  {
+    "customer_id": "cust_1058",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1059",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "Low-tier plan"
+    ]
+  },
+  {
+    "customer_id": "cust_1060",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Portuguese language preference",
+      "High support-ticket volume",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1061",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "French language preference",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1062",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1063",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long account tenure",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1064",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1065",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-Spanish language preference",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1066",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low-tier plan",
+      "Low monthly spend",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1067",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "Portuguese language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1068",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "Low recent login activity",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1069",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Long account tenure",
+      "Non-Spanish language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1070",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Non-Dutch language preference",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1071",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Non-Dutch language preference",
+      "Non-Spanish language preference",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1072",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low recent login activity",
+      "Long time since last login",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1073",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1074",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Low monthly spend",
+      "Non-Dutch language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1075",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Low-tier plan",
+      "Low monthly spend"
+    ]
+  },
+  {
+    "customer_id": "cust_1076",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Non-Dutch language preference",
+      "Non-English language preference"
+    ]
+  },
+  {
+    "customer_id": "cust_1077",
+    "risk_score": 49,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "French language preference",
+      "Non-Dutch language preference",
+      "Long account tenure"
+    ]
+  },
+  {
+    "customer_id": "cust_1078",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "High support-ticket volume",
+      "Low recent login activity",
+      "Long time since last login"
+    ]
+  },
+  {
+    "customer_id": "cust_1079",
+    "risk_score": 51,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Long time since last login",
+      "Low recent login activity",
+      "High support-ticket volume"
+    ]
+  },
+  {
+    "customer_id": "cust_1080",
+    "risk_score": 50,
+    "risk_category": "Medium",
+    "top_reasons": [
+      "Low monthly spend",
+      "Long account tenure",
+      "Low-tier plan"
+    ]
+  }
+]
