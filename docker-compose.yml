@@ -1,0 +1,36 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+
+  train:
+    build: .
+    command: bash -c "python src/data_prep.py && python src/features.py && python src/train.py"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+
+  score:
+    build: .
+    command: python src/score.py
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+
+  score-csv:
+    build: .
+    command: python src/score.py --format csv
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+
+  score-json:
+    build: .
+    command: python src/score.py --format json
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
