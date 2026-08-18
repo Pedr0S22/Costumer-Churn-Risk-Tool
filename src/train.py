@@ -163,7 +163,7 @@ def main():
     }
     
     os.makedirs("models", exist_ok=True)
-    artifact_path = "models/churn_model.joblib"
+    artifact_path = "models/churn_model_v1.joblib"
     joblib.dump(artifact, artifact_path)
     
     print("\n[OK] Training complete!")
