@@ -24,6 +24,9 @@ A reproducible churn-risk modelling pipeline that helps a retention team identif
 - [Explainability (Top Reasons)](#explainability-top-reasons)
 - [Error Analysis \& Limitations](#error-analysis--limitations)
 - [Key Assumptions \& Trade-offs](#key-assumptions--trade-offs)
+- [If I Had More Time](#if-i-had-more-time)
+- [Use of AI](#use-of-ai)
+- [Notebooks \& Further Reading](#notebooks--further-reading)
 - [API Reference](#api-reference)
 - [Output Format](#output-format)
 - [Author \& License](#author--license)
@@ -384,6 +387,12 @@ For each customer, the pipeline:
 
 5. **Language features may appear as reasons**: One-hot language indicators can surface as top contributors (e.g., "Non-Dutch language preference"). While statistically valid, these may reflect **data collection patterns** rather than actionable churn drivers.
 
+6. **SHAP (TreeExplainer) assumes feature independence**: SHAP values for tree models are computed under the assumption that features are independent. When features are correlated (e.g., `monthly_spend` and `plan_type_encoded`), SHAP can distribute credit unevenly between them — the same churn signal may be attributed mostly to one correlated feature and understate the other.
+
+7. **SHAP is a local, post-hoc method**: SHAP explains *individual predictions* after the fact. It does not reveal the global decision boundary or guarantee that the explanations are faithful to the model's true internal logic — it approximates it. Different explainability methods (LIME, counterfactuals) can produce different rankings for the same customer.
+
+8. **Explainability ≠ actionability**: Even a perfectly accurate explanation (e.g., "Low monthly spend") does not tell the retention team *what to do*. Domain expertise is required to translate reasons into interventions.
+
 ---
 
 ## Error Analysis & Limitations
@@ -404,13 +413,7 @@ For each customer, the pipeline:
 
 ### What Would Improve the Model
 
-| Improvement                        | Expected Impact                                           |
-|------------------------------------|-----------------------------------------------------------|
-| More training data (1000+ rows)    | Enable tree ensembles to outperform LR                    |
-| Temporal/behavioural features      | Login trends, spend changes over time                     |
-| Time-based train/test split        | Better estimate of real-world performance                 |
-| Calibration analysis (Platt/isotonic) | Ensure probabilities match true churn rates            |
-| Feature interactions               | Capture non-linear patterns (e.g., low spend + high tickets) |
+See the dedicated [If I Had More Time](#if-i-had-more-time) section below for a detailed roadmap.
 
 ---
 
@@ -435,6 +438,79 @@ For each customer, the pipeline:
 | Dropping rows with future signup | Clean data; no guessing                    | Loses 1 training example                                |
 | `round(p × 100)` score mapping   | Simple, rank-preserving, easy to explain   | Not calibrated — score of 50 ≠ exactly 50% churn prob  |
 | Optuna tuning (30 trials)        | Automated, fair comparison across models   | More trials might find better hyperparameters           |
+
+---
+
+## If I Had More Time
+
+This section documents concrete improvements I would pursue given more development time. They are ordered roughly by expected impact.
+
+### 1. Model Calibration & Uncertainty Quantification
+
+The current model outputs probabilities clustered around 0.45–0.55 for many customers, making it **overly uncertain**. With more time I would:
+
+- Apply **Platt scaling** (sigmoid) or **isotonic regression** to calibrate the predicted probabilities so that a score of 50 truly means ~50% churn likelihood.
+- Use **conformal prediction** to attach valid prediction intervals (e.g., "this customer's churn probability is between 40% and 65% with 90% confidence"), giving the retention team a measure of uncertainty rather than a single point score.
+- Conduct a **utility / cost-benefit analysis** — assigning different costs to false positives (unnecessary retention offers) vs. false negatives (missed churners) — to choose an optimal decision threshold instead of the default 0.5.
+
+### 2. Resampling for Class Imbalance
+
+With ~25.9% churn rate, the dataset has moderate imbalance. Beyond `class_weight='balanced'`, I would experiment with:
+
+- **SMOTE** (Synthetic Minority Over-sampling Technique) and its variants (**Borderline-SMOTE**, **ADASYN**) to synthesise minority-class examples.
+- Compare these against the current approach to see if they improve recall on the minority class without sacrificing too much precision.
+
+### 3. Expanded Cross-Validation Strategy
+
+The current pipeline uses a single 5-fold stratified CV. I would:
+
+- Try different **k values** (e.g., 3, 5, 10, and Leave-One-Out) to understand variance in the metric estimates.
+- Experiment with **different split ratios** (not just the implicit 80/20 from 5-fold) — e.g., 70/30, repeated stratified splits.
+- Use **repeated stratified k-fold** (e.g., 5×5 = 25 evaluations) to get more stable metric estimates on this small dataset.
+- Increase **Optuna trial count** (from 30 to 100+) and expand the **hyperparameter search space** (e.g., regularisation strength, additional tree parameters like `min_child_weight`, `gamma`, `reg_alpha`, `reg_lambda`).
+
+### 4. Feature Correlation Analysis & Selection
+
+- Compute a **correlation matrix** across all features and systematically remove highly correlated pairs (e.g., if `monthly_spend` and `plan_type_encoded` have r > 0.8, drop one).
+- Use **Variance Inflation Factor (VIF)** to detect multicollinearity in the logistic regression features.
+- Apply **Recursive Feature Elimination (RFE)** or **permutation importance** to verify whether each feature genuinely improves the model.
+
+### 5. More Training Data & Temporal Features
+
+- With more historical data (1000+ rows), tree-based ensembles (XGBoost, LightGBM) would likely outperform Logistic Regression.
+- Engineer **temporal/behavioural features**: login trends over the last 3 months, spend change rate, support ticket acceleration — these would capture *dynamics* rather than a single snapshot.
+- Implement a **time-based train/test split** to properly evaluate for concept drift.
+
+### 6. Code Refactoring
+
+The current `data_prep.py` and `features.py` modules contain long, monolithic functions that handle multiple concerns. With more time I would:
+
+- **Decompose large functions** into smaller, single-responsibility helpers (e.g., separate imputation, anomaly correction, and validation into their own functions/classes).
+- Add **unit tests**
+- Standardise logging and error handling across all modules.
+
+---
+
+## Use of AI
+
+AI coding assistants (such as Google Gemini / Antigravity and GitHub Copilot) were used throughout this project as a **productivity multiplier**. Specifically:
+
+- **Code scaffolding**: AI helped generate boilerplate for FastAPI endpoints, Pydantic schemas, and Docker configuration — letting me focus on the data science logic rather than infrastructure.
+- **Documentation**: AI assisted in drafting this README and structuring the data-quality catalogue.
+
+---
+
+## Notebooks & Further Reading
+
+The Jupyter notebooks in `notebooks/` contain the detailed, step-by-step analysis that informed every decision in the production pipeline. **For the deepest understanding of the project, start here.**
+
+| Notebook | Purpose |
+|----------|---------|
+| [`eda_data_quality.ipynb`](notebooks/eda_data_quality.ipynb) | Full exploratory data analysis: distributions, missing values, anomalies, class balance assessment, and the data-quality catalogue that drives `data_prep.py`. |
+| [`clean_features_modeling.ipynb`](notebooks/clean_features_modeling.ipynb) | End-to-end modelling: cleaning validation, feature engineering experiments, **ablation testing** (18 vs 9 features), model comparison, Optuna tuning results, and final evaluation. |
+| [`test_clean_features.ipynb`](notebooks/test_clean_features.ipynb) | Validation of the feature pipeline: ensures the script-based pipeline (`src/`) produces identical results to the notebook exploration. |
+
+> **Note:** The notebooks contain inline commentary, visualisations, and intermediate results that are not reproduced in this README. They are the primary source of truth for the analytical reasoning behind the pipeline.
 
 ---
 
