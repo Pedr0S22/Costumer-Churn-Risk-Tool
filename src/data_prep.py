@@ -157,6 +157,10 @@ if __name__ == "__main__":
 
     os.makedirs(args.out_dir, exist_ok=True)
 
+    print("=" * 50)
+    print("=> Costumer Churn Risk Tool - Cleaning Pipeline")
+    print("=" * 50)
+
     print("\n=== Cleaning historical dataset ===")
     hist_clean = clean_historical(args.historical)
     out_hist = os.path.join(args.out_dir, "historical_clean.csv")

@@ -113,6 +113,11 @@ def get_feature_columns(df_feats: pd.DataFrame) -> List[str]:
 if __name__ == "__main__":
     from data_prep import clean_historical
     import argparse, os
+
+    print("=" * 50)
+    print("=> Costumer Churn Risk Tool - Features Pipeline")
+    print("=" * 50)
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--historical", default="data/raw/historical_customers_ds.csv")
     args = parser.parse_args()
@@ -122,4 +127,4 @@ if __name__ == "__main__":
     out_dir = "data/processed/scripts"
     os.makedirs(out_dir, exist_ok=True)
     hist_feats.to_csv(f"{out_dir}/historical_feats.csv", index=False)
-    print(f"Saved feature dataset shape: {hist_feats.shape}")
+    print(f"Saved feature dataset shape: {hist_feats.shape}\n")
